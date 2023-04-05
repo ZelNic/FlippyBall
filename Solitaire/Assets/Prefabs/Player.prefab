@@ -165,7 +165,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.76065165, b: 0.0047169924, a: 1}
+  m_Color: {r: 0.84313726, g: 0.36078432, b: 0.11764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -224,8 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea388a8b0a9ba9c45ac4df1890420ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActiveInput: 1
+  _isActiveInput: 0
   _powerForce: 400
+  _gameManagerGO: {fileID: 0}
 --- !u!114 &7346348320138349234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  hightScoreText: {fileID: 0}
 --- !u!114 &1678998500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,5 +275,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _delayBetweenRestartScene: 2
-  _scoreGO: {fileID: 0}
   _gameManagerGO: {fileID: 0}
