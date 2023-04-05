@@ -8,7 +8,7 @@ public class WallMaker : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_timeActiveWall < Time.timeSinceLevelLoad)
+        if (_timeActiveWall < Time.time) 
         {
             ActiveWall();
         }
@@ -17,7 +17,7 @@ public class WallMaker : MonoBehaviour
 
     private void ActiveWall()
     {
-        if (_timeActiveWall < Time.timeSinceLevelLoad)
+        if (_timeActiveWall < Time.time)
         {
             for (int i = 0; i < _arrayWall.Length; i++)
             {
@@ -25,7 +25,7 @@ public class WallMaker : MonoBehaviour
                 {
                     _arrayWall[i].SetActive(true);
                     _arrayWall[i].transform.position = new Vector3(8, Random.Range(6, 10), 0);
-                    _timeActiveWall = Time.timeSinceLevelLoad + 2.5f;
+                    _timeActiveWall = Time.time + 2f;
                     break;
                 }
             }
